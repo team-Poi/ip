@@ -78,7 +78,7 @@ export default function Home(props: HomeProps) {
                   src={imageURL}
                   style={{
                     borderRadius: "5px",
-                    width: "fit-content",
+                    width: "3em",
                     height: "3em",
                   }}
                 />
