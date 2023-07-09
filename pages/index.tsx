@@ -7,6 +7,7 @@ import { FullFlex } from "@/components/ui/FullFlex";
 import { Saero } from "@/components/ui/Saero";
 import { Garo } from "@/components/ui/Garo";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 interface HomeProps {
   ip: string;
@@ -30,6 +31,9 @@ export default function Home(props: HomeProps) {
         height: "100vh",
       }}
     >
+      <Head>
+        <title>poi.kr / My ip adress</title>
+      </Head>
       <Header type="DEFAULT" />
       <FullFlex>
         <Saero

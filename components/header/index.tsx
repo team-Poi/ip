@@ -59,7 +59,17 @@ const Discord = () => (
 export default function Header(props: HeaderProps) {
   return (
     <header className={styles.header}>
-      <Garo>
+      <Link
+        href={"https://poi.kr/"}
+        style={{
+          textDecoration: "none",
+          color: "white",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Icon
           animated
           icon={
@@ -73,7 +83,7 @@ export default function Header(props: HeaderProps) {
           }}
         />
         <div className={classNames(styles.title, styles.main)}>poi.kr/ip</div>
-      </Garo>
+      </Link>
       <Garo gap={6}>
         <Link href={"https://twitter.com/teamPoi_"} className={styles.link}>
           <Twitter />
